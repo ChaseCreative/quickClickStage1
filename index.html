@@ -7,51 +7,66 @@
 
 <style>
 
+
+
+.test{
+  margin:auto;
+
+  text-align:center;
+
+
+  font-size: 150%;
+  width: 25%;
+  height:100px;
+
+
+}
 .center {
   margin:auto;
-  text-align: center;
+  width:50%;
   margin-top: 40px;
-  width:25%;
-  height:75px
+
+  text-align: center;
+
+
+
   border: 4px solid white;
+  border-radius: 25px;
+
   padding: 40px;
   background-color: red;
   color:white;
-  border-radius: 25px;
+
 }
 
-h1{
-  border: 4px solid white;
+.centerDiv {
+  float:clear;
+  margin:auto;
+  width:10%;
+
+  width: 150px;
+  height: 150px;
+  border: 4px solid blue;
+  border-radius: 125px;
 }
+
 
 .imgbox {
 
-  margin-left:45%;
-  margin-top: 20px;
-  border-radius: 125px;
-  text-align: center;
-  font-size: 150%;
-  width: 150px;
-  height: 150px;
-  border: 4px solid black;
-  background-color: yellow;
-  color: black;
-
-  padding: 6px;
   float:clear;
-
-}
-
-.imgbox1 {
-
-  margin-left:45%;
+  margin:auto;
+  width:10%;
   margin-top: 20px;
-  border-radius: 125px;
+  margin-bottom: 20px
+
+
   text-align: center;
   font-size: 150%;
   width: 150px;
   height: 150px;
   border: 4px solid black;
+  border-radius: 125px;
+
   background-color: yellow;
   color: black;
 
@@ -67,6 +82,7 @@ h1{
 
   float: clear;
   margin:auto;
+  margin-top:90px;
   text-align: center;
   background-color: black;
   color: white;
@@ -115,14 +131,14 @@ h1{
 <body class = "body">
 
 
-
 <h1 class="center">Quick Tricklation</h1>
 
-<button  class = "imgbox" id = "box1" onclick="startGame()">Start!</button>
 
-<button class = "imgbox" id = "box2" onclick="giveAnswerOne()">Click to Tricklate!</button>
+<p class="test">
+<button class = "imgbox" id = "box1"   onclick="startGame()">Start!</button>
 
-</br>
+<button class = "imgbox" id = "box2"  onclick="giveAnswerOne()">Click for Trick!</button>
+</p>
 
 <p class = "imgbox2" id="latin"></p>
 
@@ -336,7 +352,7 @@ if (ranSentenceIndx == 0){
 } else if (ranSentenceIndx == 1){
   var latinTrans = "The " + myTranslation.areas + " " + myTranslation.linkingVerb + " " + myTranslation.prepPhrase;
 }
- 
+
 
   unHideBox1();
   hideBox2();
